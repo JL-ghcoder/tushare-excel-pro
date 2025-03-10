@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TushareExcel", "TushareExcel.vbproj", "{BC744FB2-2427-4B1E-B230-EE2E1263167E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC744FB2-2427-4B1E-B230-EE2E1263167E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC744FB2-2427-4B1E-B230-EE2E1263167E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC744FB2-2427-4B1E-B230-EE2E1263167E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC744FB2-2427-4B1E-B230-EE2E1263167E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DBB14EC-C18E-404E-BC71-E3A10A06C426}
+	EndGlobalSection
+EndGlobal

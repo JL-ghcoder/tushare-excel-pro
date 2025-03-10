@@ -1,0 +1,1349 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TushareExcel
+</name>
+</assembly>
+<members>
+<member name="T:TushareExcel.My.Resources.Resources">
+<summary>
+  一个强类型的资源类，用于查找本地化的字符串等。
+</summary>
+</member>
+<member name="P:TushareExcel.My.Resources.Resources.ResourceManager">
+<summary>
+  返回此类使用的缓存的 ResourceManager 实例。
+</summary>
+</member>
+<member name="P:TushareExcel.My.Resources.Resources.Culture">
+<summary>
+  重写当前线程的 CurrentUICulture 属性，对
+  使用此强类型资源类的所有资源查找执行重写。
+</summary>
+</member>
+<member name="P:TushareExcel.My.Resources.Resources.ai">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:TushareExcel.My.Resources.Resources.beautify">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:TushareExcel.My.Resources.Resources.deepseek">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:TushareExcel.My.Resources.Resources.formula">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:TushareExcel.My.Resources.Resources.gpt">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:TushareExcel.My.Resources.Resources.reload">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:TushareExcel.My.Resources.Resources.remove">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:TushareExcel.My.Resources.Resources.teamintro">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="M:TushareExcel.AIChatUserControl.GetGPTApiUrl">
+ <summary>
+ 获取GPT API URL，优先从设置中读取
+ </summary>
+</member>
+<member name="M:TushareExcel.AIChatUserControl.GetGPTToken">
+ <summary>
+ 获取GPT API Token，优先从设置中读取
+ </summary>
+</member>
+<member name="M:TushareExcel.AIChatUserControl.GetDSToken">
+ <summary>
+ 获取DS API Token，优先从设置中读取
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.GetApiUrl">
+ <summary>
+ 获取API URL，优先从设置中读取
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.GetToken">
+ <summary>
+ 获取API Token，优先从设置中读取
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.ProcessTushareRequest(System.String,System.Boolean,System.String)">
+ <summary>
+ 处理Tushare API请求并返回结果数组
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.ExtractDataArray(Newtonsoft.Json.Linq.JObject,System.Boolean,System.String)">
+ <summary>
+ 从JSON响应中提取数据数组
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.GetActualValue(System.Object)">
+ <summary>
+ 从JSON值中提取实际值
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_API(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 通用Tushare函数 - 支持最多10个参数
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.AddParamIfValidAndCheckControl(Newtonsoft.Json.Linq.JObject@,System.String,System.String,System.Boolean@,System.String@)">
+ <summary>
+ 添加有效的参数到JSON对象，并检查是否为控制参数
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FUND_BASIC(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 基金列表
+ 获取公募基金数据列表，包括场内和场外基金
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STOCK_BASIC(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 股票列表
+ 获取基础信息数据，包括股票代码、名称、上市日期、退市日期等
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_TRADE_CAL(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 交易日历
+ 获取各大期货交易所交易日历数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_DAILY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 日线行情
+ 获取股票行情数据，或通过[**通用行情接口**]( https://tushare.pro/document/2?doc_id=109)获取数据，包含了前后复权数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_ADJ_FACTOR(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 复权因子
+ 获取股票复权因子，可提取单只股票全部历史复权因子，也可以提取单日全部股票的复权因子。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_DAILY_BASIC(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 每日指标
+ 获取全部股票每日重要的基本面指标，可用于选股分析、报表展示等。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_INCOME(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 利润表
+ 获取上市公司财务利润表数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_BALANCESHEET(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 资产负债表
+ 获取上市公司资产负债表
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_CASHFLOW(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 现金流量表
+ 获取上市公司现金流量表
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FORECAST(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 业绩预告
+ 获取业绩预告数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_EXPRESS(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 业绩快报
+ 获取上市公司业绩快报
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_MONEYFLOW_HSGT(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 沪深港通资金流向
+ 获取沪股通、深股通、港股通每日资金流向数据，每次最多返回300条记录，总量不限制。每天18~20点之间完成当日更新
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_HSGT_TOP10(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 沪深股通十大成交股
+ 获取沪股通、深股通每日前十大成交详细数据，每天18~20点之间完成当日更新
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_GGT_TOP10(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 港股通十大成交股
+ 获取港股通每日成交数据，其中包括沪市、深市详细数据，每天18~20点之间完成当日更新
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_MARGIN(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 融资融券交易汇总
+ 获取融资融券每日交易汇总数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_MARGIN_DETAIL(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 融资融券交易明细
+ 获取沪深两市每日融资融券明细
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_TOP10_HOLDERS(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 前十大股东
+ 获取上市公司前十大股东数据，包括持有数量和比例等信息
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_TOP10_FLOATHOLDERS(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 前十大流通股东
+ 获取上市公司前十大流通股东数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FINA_INDICATOR(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 财务指标数据
+ 获取上市公司财务指标数据，为避免服务器压力，现阶段每次请求最多返回60条记录，可通过设置日期多次请求获取更多数据。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FINA_AUDIT(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 财务审计意见
+ 获取上市公司定期财务审计意见数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FINA_MAINBZ(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 主营业务构成
+ 获得上市公司主营业务构成，分地区和产品两种方式
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_TMT_TWINCOMEDETAIL(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 台湾电子产业月营收明细
+ 获取台湾TMT行业上市公司各类产品月度营收情况。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_TMT_TWINCOME(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 台湾电子产业月营收
+ 获取台湾TMT电子产业领域各类产品月度营收数据。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_INDEX_BASIC(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 指数基本信息
+ 获取指数基础信息。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_INDEX_DAILY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 南华期货指数行情
+ 获取南华指数每日行情，指数行情也可以通过[**通用行情接口**]( https://tushare.pro/document/2?doc_id=109)获取数据．
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_INDEX_WEIGHT(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 指数成分和权重
+ 获取各类指数成分和权重，**月度数据** ，建议输入参数里开始日期和结束日分别输入当月第一天和最后一天的日期。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_NAMECHANGE(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 股票曾用名
+ 历史名称变更记录
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_DIVIDEND(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 分红送股数据
+ 分红送股数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_HS_CONST(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 沪深股通成分股
+ 获取沪股通、深股通成分数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_TOP_LIST(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 龙虎榜每日统计单
+ 龙虎榜每日交易明细
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_TOP_INST(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 龙虎榜机构交易单
+ 龙虎榜机构成交明细
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_PLEDGE_STAT(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 股权质押统计数据
+ 获取股票质押统计数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_PLEDGE_DETAIL(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 股权质押明细数据
+ 获取股票质押明细数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STOCK_COMPANY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 上市公司基本信息
+ 获取上市公司基础信息，单次提取4500条，可以根据交易所分批提取
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_BO_MONTHLY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 电影月度票房
+ 获取电影月度票房数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_BO_WEEKLY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 电影周度票房
+ 获取周度票房数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_BO_DAILY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 电影日度票房
+ 获取电影日度票房
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_BO_CINEMA(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 影院日度票房
+ 获取每日各影院的票房数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FUND_COMPANY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 基金管理人
+ 获取公募基金管理人列表
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FUND_NAV(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 基金净值
+ 获取公募基金净值数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FUND_DIV(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 基金分红
+ 获取公募基金分红数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FUND_PORTFOLIO(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 基金持仓
+ 获取公募基金持仓数据，季度更新
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_NEW_SHARE(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ IPO新股上市
+ 获取新股上市列表数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_REPURCHASE(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 股票回购
+ 获取上市公司回购股票数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_CONCEPT(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 概念股分类表
+ 获取概念股分类，目前只有ts一个来源，未来将逐步增加来源
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_CONCEPT_DETAIL(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 概念股明细列表
+ 获取概念股分类明细数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FUND_DAILY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 基金行情（含ETF）
+ 获取场内基金日线行情，类似股票日行情，包括ETF行情
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_INDEX_DAILYBASIC(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 大盘指数每日指标
+ 目前只提供上证综指，深证成指，上证50，中证500，中小板指，创业板指的每日指标数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FUT_BASIC(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 合约信息
+ 获取期货合约列表数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FUT_DAILY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 日线行情
+ 期货日线行情数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FUT_HOLDING(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 每日持仓排名
+ 获取每日成交持仓排名数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FUT_WSR(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 仓单日报
+ 获取仓单日报数据，了解各仓库/厂库的仓单变化
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FUT_SETTLE(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 每日结算参数
+ 获取每日结算参数数据，包括交易和交割费率等
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_NEWS(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 新闻快讯
+ 获取主流新闻网站的快讯新闻数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_WEEKLY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 周线行情
+ 获取A股周线行情
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_MONTHLY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 月线行情
+ 获取A股月线数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_SHIBOR(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ Shibor利率
+ shibor利率
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_SHIBOR_QUOTE(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ Shibor报价数据
+ Shibor报价数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_SHIBOR_LPR(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ LPR贷款基础利率
+ LPR贷款基础利率
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_LIBOR(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ Libor利率
+ Libor拆借利率
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_HIBOR(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ Hibor利率
+ Hibor利率
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_CCTV_NEWS(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 新闻联播文字稿
+ 获取新闻联播文字稿数据，数据开始于2006年6月，超过12年历史
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FILM_RECORD(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 全国电影剧本备案数据
+ 获取全国电影剧本备案的公示数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_OPT_BASIC(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 期权合约信息
+ 获取期权合约信息
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_OPT_DAILY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 期权日线行情
+ 获取期权日线行情
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_SHARE_FLOAT(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 限售股解禁
+ 获取限售股解禁
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_BLOCK_TRADE(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 大宗交易
+ 大宗交易
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_DISCLOSURE_DATE(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 财报披露日期表
+ 获取财报披露计划日期
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STK_ACCOUNT(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 股票开户数据（停）
+ 获取股票账户开户数据，统计周期为一周
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STK_ACCOUNT_OLD(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 股票开户数据（旧）
+ 获取股票账户开户数据旧版格式数据，数据从2008年1月开始，到2015年5月29，新数据请通过[股票开户数据](https://tushare.pro/document/2?doc_id=164)获取。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STK_HOLDERNUMBER(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 股东人数
+ 获取上市公司股东户数数据，数据不定期公布
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_MONEYFLOW(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 个股资金流向
+ 获取沪深A股票资金流向数据，分析大单小单成交情况，用于判别资金动向，数据开始于2010年。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_INDEX_WEEKLY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 指数周线行情
+ 获取指数周线行情
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_INDEX_MONTHLY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 指数月线行情
+ 获取指数月线行情,每月更新一次
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_WZ_INDEX(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 温州民间借贷利率
+ 温州民间借贷利率，即温州指数
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_GZ_INDEX(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 广州民间借贷利率
+ 广州民间借贷利率
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STK_HOLDERTRADE(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 股东增减持
+ 获取上市公司增减持数据，了解重要股东近期及历史上的股份增减变化
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_ANNS_D(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 上市公司公告
+ 获取全量公告数据，提供pdf下载URL
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FX_OBASIC(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 外汇基础信息（海外）
+ 获取海外外汇基础信息，目前只有FXCM交易商的数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FX_DAILY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 外汇日线行情
+ 获取外汇日线行情
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_TELEPLAY_RECORD(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 全国电视剧备案公示数据
+ 获取2009年以来全国拍摄制作电视剧备案公示数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_INDEX_CLASSIFY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 申万行业分类
+ 获取申万行业分类，可以获取申万2014年版本（28个一级分类，104个二级分类，227个三级分类）和2021年本版（31个一级分类，134个二级分类，346个三级分类）列表信息
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STK_LIMIT(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 每日涨跌停价格
+ 获取全市场（包含A/B股和基金）每日涨跌停价格，包括涨停价格，跌停价格等，每个交易日8点40左右更新当日股票涨跌停价格。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_CB_BASIC(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 可转债基础信息
+ 获取可转债基本信息
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_CB_ISSUE(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 可转债发行
+ 获取可转债发行数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_CB_DAILY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 可转债行情
+ 获取可转债行情
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_HK_HOLD(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 沪深股通持股明细
+ 获取沪深港股通持股明细，数据来源港交所。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FUT_MAPPING(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 期货主力与连续合约
+ 获取期货主力（或连续）合约与月合约映射数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_HK_BASIC(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 港股基础信息
+ 获取港股列表信息
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_HK_DAILY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 港股日线行情
+ 获取港股每日增量和历史行情，每日18点左右更新当日数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STK_MANAGERS(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 上市公司管理层
+ 获取上市公司管理层
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STK_REWARDS(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 管理层薪酬和持股
+ 获取上市公司管理层薪酬和持股
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_MAJOR_NEWS(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 新闻通讯（长篇）
+ 获取长篇通讯信息，覆盖主要新闻资讯网站
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_GGT_DAILY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 港股通每日成交统计
+ 获取港股通每日成交信息，数据从2014年开始
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_GGT_MONTHLY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 港股通每月成交统计
+ 港股通每月成交信息，数据从2014年开始
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FUND_ADJ(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 复权因子
+ 获取基金复权因子，用于计算基金复权行情
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_YC_CB(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 国债收益率曲线
+ 获取中债收益率曲线，目前可获取中债国债收益率曲线即期和到期收益率曲线数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FUND_SHARE(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 基金规模
+ 获取基金规模数据，包含上海和深圳ETF基金
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FUND_MANAGER(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 基金经理
+ 获取公募基金经理数据，包括基金经理简历等数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_INDEX_GLOBAL(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 国际主要指数
+ 获取国际主要指数日线行情
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_SUSPEND_D(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 每日停复牌信息
+ 按日期方式获取股票每日停复牌信息
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_DAILY_INFO(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 沪深市场每日交易统计
+ 获取交易所股票交易统计，包括各板块明细
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FUT_WEEKLY_DETAIL(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 期货主要品种交易周报
+ 获取期货交易所主要品种每周交易统计信息，数据从2010年3月开始
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_US_TYCR(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 国债收益率曲线利率
+ 获取美国每日国债收益率曲线利率
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_US_TRYCR(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 国债实际收益率曲线利率
+ 国债实际收益率曲线利率
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_US_TBR(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 短期国债利率
+ 获取美国短期国债利率数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_US_TLTR(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 国债长期利率
+ 国债长期利率
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_US_TRLTR(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 国债长期利率平均值
+ 国债实际长期利率平均值
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_CN_GDP(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 国内生产总值（GDP）
+ 获取国民经济之GDP数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_CN_CPI(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 居民消费价格指数（CPI）
+ 获取CPI居民消费价格数据，包括全国、城市和农村的数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_ECO_CAL(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 全球财经事件
+ 获取全球财经日历、包括经济事件数据更新
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_CN_M(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 货币供应量（月）
+ 获取货币供应量之月度数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_CN_PPI(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 工业生产者出厂价格指数（PPI）
+ 获取PPI工业生产者出厂价格指数数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_CB_PRICE_CHG(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 可转债转股价变动
+ 获取可转债转股价变动
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_CB_SHARE(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 可转债转股结果
+ 获取可转债转股结果
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_HK_TRADECAL(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 港股交易日历
+ 获取交易日历
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_US_BASIC(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 美股基础信息
+ 获取美股列表信息
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_US_TRADECAL(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 美股交易日历
+ 获取美股交易日历信息
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_US_DAILY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 美股日线行情
+ 获取美股行情（未复权），包括全部股票全历史行情，以及重要的市场和估值指标
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_BAK_DAILY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 备用行情
+ 获取备用行情，包括特定的行情指标(数据从2017年中左右开始，早期有几天数据缺失，近期正常)
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_REPO_DAILY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 债券回购日行情
+ 债券回购日行情
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_THS_INDEX(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 同花顺行业概念板块
+ 获取同花顺板块指数。注：数据版权归属同花顺，如做商业用途，请主动联系同花顺，如需帮助请联系微信：waditu_a
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_THS_DAILY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 同花顺概念和行业指数行情
+ 获取同花顺板块指数行情。注：数据版权归属同花顺，如做商业用途，请主动联系同花顺，如需帮助请联系微信：waditu_a
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_THS_MEMBER(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 同花顺行业概念成分
+ 获取同花顺概念板块成分列表注：数据版权归属同花顺，如做商业用途，请主动联系同花顺。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_BAK_BASIC(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 股票历史列表
+ 获取备用基础列表，数据从2016年开始
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FUND_SALES_RATIO(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 各渠道公募基金销售保有规模占比
+ 获取各渠道公募基金销售保有规模占比数据，年度更新
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FUND_SALES_VOL(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 销售机构公募基金销售保有规模
+ 获取销售机构公募基金销售保有规模数据，本数据从2021年Q1开始公布，季度更新
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_BROKER_RECOMMEND(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 券商月度金股
+ 获取券商月度金股，一般1日~3日内更新当月数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_SZ_DAILY_INFO(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 深圳市场每日交易情况
+ 获取深圳市场每日交易概况
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_CB_CALL(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 可转债赎回信息
+ 获取可转债到期赎回、强制赎回等信息。数据来源于公开披露渠道，供个人和机构研究使用，请不要用于数据商业目的。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_BOND_BLK(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 大宗交易
+ 获取沪深交易所债券大宗交易数据，可以通过[**数据工具**](https://tushare.pro/webclient/)调试和查看数据。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_BOND_BLK_DETAIL(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 大宗交易明细
+ 获取沪深交易所债券大宗交易数据，可以通过[**数据工具**](https://tushare.pro/webclient/)调试和查看数据。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_CCASS_HOLD_DETAIL(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 中央结算系统持股明细
+ 获取中央结算系统机构席位持股明细，数据覆盖**全历史**，根据交易所披露时间，当日数据在下一交易日早上9点前完成
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STK_SURV(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 机构调研数据
+ 获取上市公司机构调研记录数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_SGE_BASIC(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 上海黄金基础信息
+ 获取上海黄金交易所现货合约基础信息
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_SGE_DAILY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 上海黄金现货日行情
+ 获取上海黄金交易所现货合约日线行情
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_REPORT_RC(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 券商盈利预测数据
+ 获取券商（卖方）每天研报的盈利预测数据，数据从2010年开始，每晚19~22点更新当日数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_CYQ_PERF(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 每日筹码及胜率
+ 获取A股每日筹码平均成本和胜率情况，每天17~18点左右更新，数据从2018年开始
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_CYQ_CHIPS(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 每日筹码分布
+ 获取A股每日的筹码分布情况，提供各价位占比，数据从2018年开始，每天17~18点之间更新当日数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_CCASS_HOLD(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 中央结算系统持股统计
+ 获取中央结算系统持股汇总数据，覆盖全部历史数据，根据交易所披露时间，当日数据在下一交易日早上9点前完成入库
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STK_FACTOR(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 股票技术面因子
+ 获取股票每日技术面因子数据，用于跟踪股票当前走势情况，数据由Tushare社区自产，覆盖全历史
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_LIMIT_LIST_D(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 涨跌停和炸板数据
+ 获取A股每日涨跌停、炸板数据情况，数据从2020年开始（不提供ST股票的统计）
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STOCK_MX(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 动能因子
+ 获取小佩数据动量因子数据，可以获取股票动能评级数据，包括最新及过去历史数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STOCK_VX(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 估值因子
+ 小沛估值因子
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_HK_MINS(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 港股分钟行情
+ 港股分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK和 http Restful API两种方式
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_CB_RATE(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 可转债票面利率
+ 获取可转债票面利率
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_CI_DAILY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 中信行业指数日行情
+ 获取中信行业指数日线行情
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_SF_MONTH(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 社融增量（月度）
+ 获取月度社会融资数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_HM_LIST(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 市场游资最全名录
+ 获取游资分类名录信息
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FT_MINS(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 历史分钟行情
+ 获取全市场期货合约分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK和 http Restful API两种方式，如果需要主力合约分钟，请先通过主力[mapping](https://tushare.pro/document/2?doc_id=189)接口获取对应的合约代码后提取分钟。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_REALTIME_QUOTE(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 实时行情（爬虫）
+ 本接口是tushare org版实时接口的顺延，数据来自网络，且不进入tushare服务器，属于爬虫接口，请将tushare升级到1.3.3版本以上。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_REALTIME_TICK(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 实时成交（爬虫）
+ 本接口是tushare org版实时接口的顺延，数据来自网络，且不进入tushare服务器，属于爬虫接口，数据包括该股票当日开盘以来的所有分笔成交数据。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_REALTIME_LIST(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 实时排名（爬虫）
+ 本接口是tushare org版实时接口的顺延，数据来自网络，且不进入tushare服务器，属于爬虫接口，数据包括该股票当日开盘以来的所有分笔成交数据。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_THS_HOT(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 同花顺App热榜数
+ 获取同花顺App热榜数据，包括热股、概念板块、ETF、可转债、港美股等等，每日盘中提取4次，收盘后4次，最晚22点提取一次。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_DC_HOT(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 东方财富App热榜
+ 获取东方财富App热榜数据，包括A股市场、ETF基金、港股市场、美股市场等等，每日盘中提取4次，收盘后4次，最晚22点提取一次。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_BC_OTCQT(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 柜台流通式债券报价
+ 柜台流通式债券报价
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_BC_BESTOTCQT(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 柜台流通式债券最优报价
+ 柜台流通式债券最优报价
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_CN_PMI(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 采购经理指数（PMI）
+ 采购经理人指数
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_MARGIN_SECS(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 融资融券标的（盘前）
+ 获取沪深京三大交易所融资融券标的（包括ETF），每天盘前更新
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_SW_DAILY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 申万行业指数日行情
+ 获取申万行业日线行情（默认是申万2021版行情）
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STK_FACTOR_PRO(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 股票技术面因子(专业版）
+ 获取股票每日技术面因子数据，用于跟踪股票当前走势情况，数据由Tushare社区自产，覆盖全历史；输出参数_bfq表示不复权，_qfq表示前复权 _hfq表示后复权，描述中说明了因子的默认传参，如需要特殊参数或者更多因子可以联系管理员评估
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STK_PREMARKET(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 每日股本（盘前）
+ 每日开盘前获取当日股票的股本情况，包括总股本和流通股本，涨跌停价格等。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_SLB_LEN(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 转融资交易汇总
+ 转融通融资汇总
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_SLB_SEC(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 转融券交易汇总
+ 转融通转融券交易汇总
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_SLB_SEC_DETAIL(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 转融券交易明细
+ 转融券交易明细
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_SLB_LEN_MM(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 做市借券交易汇总
+ 做市借券交易汇总
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_INDEX_MEMBER_ALL(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 申万行业成分（分级）
+ 按三级分类提取申万行业成分，可提供某个分类的所有成分，也可按股票代码提取所属分类，参数灵活
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STK_WEEKLY_MONTHLY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 周/月线行情(每日更新)
+ 股票周/月线行情(每日更新)
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FUT_WEEKLY_MONTHLY(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 期货周/月线行情(每日更新)
+ 期货周/月线行情(每日更新)
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_US_DAILY_ADJ(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 美股复权行情
+ 获取美股复权行情，支持美股全市场股票，提供股本、市值、复权因子和成交信息等多个数据指标
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_HK_DAILY_ADJ(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 港股复权行情
+ 获取港股复权行情，提供股票股本、市值和成交及换手多个数据指标
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_RT_FUT_MIN(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 实时分钟行情
+ 获取全市场期货合约实时分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK、 http Restful API和websocket三种方式，如果需要主力合约分钟，请先通过主力[mapping](https://tushare.pro/document/2?doc_id=189)接口获取对应的合约代码后提取分钟。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_OPT_MINS(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 期权分钟行情
+ 获取全市场期权合约分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK和 http Restful API两种方式。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_MONEYFLOW_IND_THS(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 行业资金流向（THS）
+ 获取同花顺行业板块资金流向，每日盘后更新
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_MONEYFLOW_IND_DC(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 板块资金流向（DC）
+ 获取东方财富板块资金流向，每天盘后更新
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_MONEYFLOW_MKT_DC(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 大盘资金流向（DC）
+ 获取东方财富大盘资金流向数据，每日盘后更新
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_KPL_LIST(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 榜单数据（开盘啦）
+ 获取开盘啦涨停、跌停、炸板等榜单数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_MONEYFLOW_THS(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 个股资金流向（THS）
+ 获取同花顺个股资金流向数据，每日盘后更新
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_MONEYFLOW_DC(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 个股资金流向（DC）
+ 获取东方财富个股资金流向数据，每日盘后更新，数据开始于20230911
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_KPL_CONCEPT(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 题材数据（开盘啦）
+ 获取开盘啦概念题材列表，每天盘后更新
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_KPL_CONCEPT_CONS(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 题材成分（开盘啦）
+ 获取开盘啦概念题材的成分股
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STK_AUCTION_O(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 股票开盘集合竞价数据
+ 股票开盘9:30集合竞价数据，每天盘后更新
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STK_AUCTION_C(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 股票收盘集合竞价数据
+ 股票收盘15:00集合竞价数据，每天盘后更新
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_LIMIT_LIST_THS(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 同花顺涨跌停榜单
+ 获取同花顺每日涨跌停榜单数据，历史数据从20231101开始提供，增量每天16点左右更新
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_LIMIT_STEP(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 涨停股票连板天梯
+ 获取每天连板个数晋级的股票，可以分析出每天连续涨停进阶个数，判断强势热度
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_LIMIT_CPT_LIST(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 涨停最强板块统计
+ 获取每天涨停股票最多最强的概念板块，可以分析强势板块的轮动，判断资金动向
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_IDX_FACTOR_PRO(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 指数技术面因子(专业版)
+ 获取指数每日技术面因子数据，用于跟踪指数当前走势情况，数据由Tushare社区自产，覆盖全历史；输出参数_bfq表示不复权描述中说明了因子的默认传参，如需要特殊参数或者更多因子可以联系管理员评估，指数包括大盘指数 申万行业指数 中信指数
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FUND_FACTOR_PRO(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 基金技术面因子(专业版)
+ 获取场内基金每日技术面因子数据，用于跟踪场内基金当前走势情况，数据由Tushare社区自产，覆盖全历史；输出参数_bfq表示不复权，描述中说明了因子的默认传参，如需要特殊参数或者更多因子可以联系管理员评估
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_DC_INDEX(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 东方财富概念板块
+ 获取东方财富每个交易日的概念板块数据，支持按日期查询
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_DC_MEMBER(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 东方财富概念成分
+ 获取东方财富板块每日成分数据，可以根据概念板块代码和交易日期，获取历史成分
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STK_NINETURN(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 神奇九转指标
+ 神奇九转（又称“九转序列”）是一种基于技术分析的股票趋势反转指标，其思想来源于技术分析大师汤姆·迪马克（Tom DeMark）的TD序列。该指标的核心功能是通过识别股价在上涨或下跌过程中连续9天的特定走势，来判断股价的潜在反转点，从而帮助投资者提高抄底和逃顶的成功率，日线级别配合60min的九转效果更好，数据从20230101开始。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STK_WEEK_MONTH_ADJ(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 周/月线复权行情(每日更新)
+ 股票周/月线行情(复权--每日更新)
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_FT_LIMIT(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 期货合约涨跌停价格
+ 获取所有期货合约每天的涨跌停价格及最低保证金率，数据开始于2005年。
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STK_AUCTION(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 开盘竞价成交（当日）
+ 获取当日个股和ETF的集合竞价成交情况，每天9点25后可以获取当日的集合竞价成交数据
+ </summary>
+</member>
+<member name="M:TushareExcel.TushareFunctions.TUSHARE_STK_MINS(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 分钟行情
+ 获取A股分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK和 http Restful API两种方式
+ </summary>
+</member>
+<member name="T:TushareExcel.ThisRibbonCollection">
+
+</member>
+<member name="M:TushareExcel.ThisRibbonCollection.#ctor(Microsoft.Office.Tools.Ribbon.RibbonFactory)">
+
+</member>
+<member name="T:TushareExcel.ThisAddIn">
+
+</member>
+<member name="M:TushareExcel.ThisAddIn.#ctor(Microsoft.Office.Tools.Excel.ApplicationFactory,System.IServiceProvider)">
+
+</member>
+<member name="M:TushareExcel.ThisAddIn.Initialize">
+
+</member>
+<member name="M:TushareExcel.ThisAddIn.FinishInitialization">
+
+</member>
+<member name="M:TushareExcel.ThisAddIn.InitializeDataBindings">
+
+</member>
+<member name="M:TushareExcel.ThisAddIn.InitializeCachedData">
+
+</member>
+<member name="M:TushareExcel.ThisAddIn.InitializeData">
+
+</member>
+<member name="M:TushareExcel.ThisAddIn.BindToData">
+
+</member>
+<member name="M:TushareExcel.ThisAddIn.StartCaching(System.String)">
+
+</member>
+<member name="M:TushareExcel.ThisAddIn.StopCaching(System.String)">
+
+</member>
+<member name="M:TushareExcel.ThisAddIn.IsCached(System.String)">
+
+</member>
+<member name="M:TushareExcel.ThisAddIn.BeginInitialization">
+
+</member>
+<member name="M:TushareExcel.ThisAddIn.EndInitialization">
+
+</member>
+<member name="M:TushareExcel.ThisAddIn.InitializeControls">
+
+</member>
+<member name="M:TushareExcel.ThisAddIn.InitializeComponents">
+
+</member>
+<member name="M:TushareExcel.ThisAddIn.NeedsFill(System.String)">
+
+</member>
+<member name="M:TushareExcel.ThisAddIn.OnShutdown">
+
+</member>
+<member name="T:TushareExcel.Globals">
+
+</member>
+<member name="M:TushareExcel.Globals.#ctor">
+
+</member>
+</members>
+</doc>

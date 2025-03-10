@@ -1,0 +1,67 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\syesw\\Desktop\\tushare excel\\TushareExcel\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|TushareExcel||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC744FB2-2427-4B1E-B230-EE2E1263167E}|TushareExcel.vbproj|C:\\Users\\syesw\\Desktop\\tushare excel\\TushareExcel\\ribbon.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{BC744FB2-2427-4B1E-B230-EE2E1263167E}|TushareExcel.vbproj|solutionrelative:ribbon.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC744FB2-2427-4B1E-B230-EE2E1263167E}|TushareExcel.vbproj|c:\\users\\syesw\\desktop\\tushare excel\\tushareexcel\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|cc7369a8-b9b0-439c-b136-ba955819f7f8"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 289,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TushareExcel",
+              "DocumentMoniker": "C:\\Users\\syesw\\Desktop\\tushare excel\\TushareExcel\\TushareExcel.vbproj",
+              "RelativeDocumentMoniker": "TushareExcel.vbproj",
+              "ToolTip": "C:\\Users\\syesw\\Desktop\\tushare excel\\TushareExcel\\TushareExcel.vbproj",
+              "RelativeToolTip": "TushareExcel.vbproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-10T04:13:22.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ribbon.vb [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\Users\\syesw\\Desktop\\tushare excel\\TushareExcel\\ribbon.vb",
+              "RelativeDocumentMoniker": "ribbon.vb",
+              "ToolTip": "C:\\Users\\syesw\\Desktop\\tushare excel\\TushareExcel\\ribbon.vb [\u8BBE\u8BA1]",
+              "RelativeToolTip": "ribbon.vb [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-03-05T01:23:05.494Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 111,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2086 @@
+{
+  "14": {
+    "name": "沪深股票",
+    "subcategories": {
+      "15": {
+        "name": "行情数据",
+        "apis": [
+          {
+            "name": "daily",
+            "title": "日线行情",
+            "description": "获取股票行情数据，或通过[**通用行情接口**]( https://tushare.pro/document/2?doc_id=109)获取数据，包含了前后复权数据"
+          },
+          {
+            "name": "adj_factor",
+            "title": "复权因子",
+            "description": "获取股票复权因子，可提取单只股票全部历史复权因子，也可以提取单日全部股票的复权因子。"
+          },
+          {
+            "name": "daily_basic",
+            "title": "每日指标",
+            "description": "获取全部股票每日重要的基本面指标，可用于选股分析、报表展示等。"
+          },
+          {
+            "name": "hsgt_top10",
+            "title": "沪深股通十大成交股",
+            "description": "获取沪股通、深股通每日前十大成交详细数据，每天18~20点之间完成当日更新"
+          },
+          {
+            "name": "ggt_top10",
+            "title": "港股通十大成交股",
+            "description": "获取港股通每日成交数据，其中包括沪市、深市详细数据，每天18~20点之间完成当日更新"
+          },
+          {
+            "name": "weekly",
+            "title": "周线行情",
+            "description": "获取A股周线行情"
+          },
+          {
+            "name": "monthly",
+            "title": "月线行情",
+            "description": "获取A股月线数据"
+          },
+          {
+            "name": "stk_limit",
+            "title": "每日涨跌停价格",
+            "description": "获取全市场（包含A/B股和基金）每日涨跌停价格，包括涨停价格，跌停价格等，每个交易日8点40左右更新当日股票涨跌停价格。"
+          },
+          {
+            "name": "ggt_daily",
+            "title": "港股通每日成交统计",
+            "description": "获取港股通每日成交信息，数据从2014年开始"
+          },
+          {
+            "name": "ggt_monthly",
+            "title": "港股通每月成交统计",
+            "description": "港股通每月成交信息，数据从2014年开始"
+          },
+          {
+            "name": "suspend_d",
+            "title": "每日停复牌信息",
+            "description": "按日期方式获取股票每日停复牌信息"
+          },
+          {
+            "name": "bak_daily",
+            "title": "备用行情",
+            "description": "获取备用行情，包括特定的行情指标(数据从2017年中左右开始，早期有几天数据缺失，近期正常)"
+          },
+          {
+            "name": "realtime_quote",
+            "title": "实时行情（爬虫）",
+            "description": "本接口是tushare org版实时接口的顺延，数据来自网络，且不进入tushare服务器，属于爬虫接口，请将tushare升级到1.3.3版本以上。"
+          },
+          {
+            "name": "realtime_tick",
+            "title": "实时成交（爬虫）",
+            "description": "本接口是tushare org版实时接口的顺延，数据来自网络，且不进入tushare服务器，属于爬虫接口，数据包括该股票当日开盘以来的所有分笔成交数据。"
+          },
+          {
+            "name": "realtime_list",
+            "title": "实时排名（爬虫）",
+            "description": "本接口是tushare org版实时接口的顺延，数据来自网络，且不进入tushare服务器，属于爬虫接口，数据包括该股票当日开盘以来的所有分笔成交数据。"
+          },
+          {
+            "name": "stk_weekly_monthly",
+            "title": "周/月线行情(每日更新)",
+            "description": "股票周/月线行情(每日更新)"
+          },
+          {
+            "name": "stk_week_month_adj",
+            "title": "周/月线复权行情(每日更新)",
+            "description": "股票周/月线行情(复权--每日更新)"
+          },
+          {
+            "name": "stk_mins",
+            "title": "分钟行情",
+            "description": "获取A股分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK和 http Restful API两种方式"
+          }
+        ]
+      },
+      "16": {
+        "name": "财务数据",
+        "apis": [
+          {
+            "name": "income",
+            "title": "利润表",
+            "description": "获取上市公司财务利润表数据"
+          },
+          {
+            "name": "balancesheet",
+            "title": "资产负债表",
+            "description": "获取上市公司资产负债表"
+          },
+          {
+            "name": "cashflow",
+            "title": "现金流量表",
+            "description": "获取上市公司现金流量表"
+          },
+          {
+            "name": "forecast",
+            "title": "业绩预告",
+            "description": "获取业绩预告数据"
+          },
+          {
+            "name": "express",
+            "title": "业绩快报",
+            "description": "获取上市公司业绩快报"
+          },
+          {
+            "name": "fina_indicator",
+            "title": "财务指标数据",
+            "description": "获取上市公司财务指标数据，为避免服务器压力，现阶段每次请求最多返回60条记录，可通过设置日期多次请求获取更多数据。"
+          },
+          {
+            "name": "fina_audit",
+            "title": "财务审计意见",
+            "description": "获取上市公司定期财务审计意见数据"
+          },
+          {
+            "name": "fina_mainbz",
+            "title": "主营业务构成",
+            "description": "获得上市公司主营业务构成，分地区和产品两种方式"
+          },
+          {
+            "name": "dividend",
+            "title": "分红送股数据",
+            "description": "分红送股数据"
+          },
+          {
+            "name": "disclosure_date",
+            "title": "财报披露日期表",
+            "description": "获取财报披露计划日期"
+          }
+        ]
+      },
+      "17": {
+        "name": "参考数据",
+        "apis": [
+          {
+            "name": "top10_floatholders",
+            "title": "前十大流通股东",
+            "description": "获取上市公司前十大流通股东数据"
+          },
+          {
+            "name": "concept",
+            "title": "概念股分类表",
+            "description": "获取概念股分类，目前只有ts一个来源，未来将逐步增加来源"
+          },
+          {
+            "name": "concept_detail",
+            "title": "概念股明细列表",
+            "description": "获取概念股分类明细数据"
+          },
+          {
+            "name": "share_float",
+            "title": "限售股解禁",
+            "description": "获取限售股解禁"
+          },
+          {
+            "name": "stk_holdernumber",
+            "title": "股东人数",
+            "description": "获取上市公司股东户数数据，数据不定期公布"
+          }
+        ]
+      },
+      "24": {
+        "name": "基础数据",
+        "apis": [
+          {
+            "name": "stock_basic",
+            "title": "股票列表",
+            "description": "获取基础信息数据，包括股票代码、名称、上市日期、退市日期等"
+          },
+          {
+            "name": "namechange",
+            "title": "股票曾用名",
+            "description": "历史名称变更记录"
+          },
+          {
+            "name": "hs_const",
+            "title": "沪深股通成分股",
+            "description": "获取沪股通、深股通成分数据"
+          },
+          {
+            "name": "stock_company",
+            "title": "上市公司基本信息",
+            "description": "获取上市公司基础信息，单次提取4500条，可以根据交易所分批提取"
+          },
+          {
+            "name": "new_share",
+            "title": "IPO新股上市",
+            "description": "获取新股上市列表数据"
+          },
+          {
+            "name": "stk_managers",
+            "title": "上市公司管理层",
+            "description": "获取上市公司管理层"
+          },
+          {
+            "name": "stk_rewards",
+            "title": "管理层薪酬和持股",
+            "description": "获取上市公司管理层薪酬和持股"
+          },
+          {
+            "name": "bak_basic",
+            "title": "股票历史列表",
+            "description": "获取备用基础列表，数据从2016年开始"
+          },
+          {
+            "name": "stk_premarket",
+            "title": "每日股本（盘前）",
+            "description": "每日开盘前获取当日股票的股本情况，包括总股本和流通股本，涨跌停价格等。"
+          }
+        ]
+      },
+      "291": {
+        "name": "特色数据",
+        "apis": [
+          {
+            "name": "hk_hold",
+            "title": "沪深股通持股明细",
+            "description": "获取沪深港股通持股明细，数据来源港交所。"
+          },
+          {
+            "name": "broker_recommend",
+            "title": "券商月度金股",
+            "description": "获取券商月度金股，一般1日~3日内更新当月数据"
+          },
+          {
+            "name": "ccass_hold_detail",
+            "title": "中央结算系统持股明细",
+            "description": "获取中央结算系统机构席位持股明细，数据覆盖**全历史**，根据交易所披露时间，当日数据在下一交易日早上9点前完成"
+          },
+          {
+            "name": "stk_surv",
+            "title": "机构调研数据",
+            "description": "获取上市公司机构调研记录数据"
+          },
+          {
+            "name": "report_rc",
+            "title": "券商盈利预测数据",
+            "description": "获取券商（卖方）每天研报的盈利预测数据，数据从2010年开始，每晚19~22点更新当日数据"
+          },
+          {
+            "name": "cyq_perf",
+            "title": "每日筹码及胜率",
+            "description": "获取A股每日筹码平均成本和胜率情况，每天17~18点左右更新，数据从2018年开始"
+          },
+          {
+            "name": "cyq_chips",
+            "title": "每日筹码分布",
+            "description": "获取A股每日的筹码分布情况，提供各价位占比，数据从2018年开始，每天17~18点之间更新当日数据"
+          },
+          {
+            "name": "ccass_hold",
+            "title": "中央结算系统持股统计",
+            "description": "获取中央结算系统持股汇总数据，覆盖全部历史数据，根据交易所披露时间，当日数据在下一交易日早上9点前完成入库"
+          },
+          {
+            "name": "stk_factor",
+            "title": "股票技术面因子",
+            "description": "获取股票每日技术面因子数据，用于跟踪股票当前走势情况，数据由Tushare社区自产，覆盖全历史"
+          },
+          {
+            "name": "stk_factor_pro",
+            "title": "股票技术面因子(专业版）",
+            "description": "获取股票每日技术面因子数据，用于跟踪股票当前走势情况，数据由Tushare社区自产，覆盖全历史；输出参数_bfq表示不复权，_qfq表示前复权 _hfq表示后复权，描述中说明了因子的默认传参，如需要特殊参数或者更多因子可以联系管理员评估"
+          },
+          {
+            "name": "stk_auction_o",
+            "title": "股票开盘集合竞价数据",
+            "description": "股票开盘9:30集合竞价数据，每天盘后更新"
+          },
+          {
+            "name": "stk_auction_c",
+            "title": "股票收盘集合竞价数据",
+            "description": "股票收盘15:00集合竞价数据，每天盘后更新"
+          },
+          {
+            "name": "stk_nineturn（由于涉及分钟数据每天21点更新）",
+            "title": "神奇九转指标",
+            "description": "神奇九转（又称“九转序列”）是一种基于技术分析的股票趋势反转指标，其思想来源于技术分析大师汤姆·迪马克（Tom DeMark）的TD序列。该指标的核心功能是通过识别股价在上涨或下跌过程中连续9天的特定走势，来判断股价的潜在反转点，从而帮助投资者提高抄底和逃顶的成功率，日线级别配合60min的九转效果更好，数据从20230101开始。"
+          }
+        ]
+      },
+      "330": {
+        "name": "两融及转融通",
+        "apis": [
+          {
+            "name": "margin",
+            "title": "融资融券交易汇总",
+            "description": "获取融资融券每日交易汇总数据"
+          },
+          {
+            "name": "margin_detail",
+            "title": "融资融券交易明细",
+            "description": "获取沪深两市每日融资融券明细"
+          },
+          {
+            "name": "margin_secs",
+            "title": "融资融券标的（盘前）",
+            "description": "获取沪深京三大交易所融资融券标的（包括ETF），每天盘前更新"
+          },
+          {
+            "name": "slb_len",
+            "title": "转融资交易汇总",
+            "description": "转融通融资汇总"
+          }
+        ]
+      },
+      "342": {
+        "name": "资金流向数据",
+        "apis": [
+          {
+            "name": "moneyflow_hsgt",
+            "title": "沪深港通资金流向",
+            "description": "获取沪股通、深股通、港股通每日资金流向数据，每次最多返回300条记录，总量不限制。每天18~20点之间完成当日更新"
+          },
+          {
+            "name": "moneyflow",
+            "title": "个股资金流向",
+            "description": "获取沪深A股票资金流向数据，分析大单小单成交情况，用于判别资金动向，数据开始于2010年。"
+          },
+          {
+            "name": "moneyflow_ind_ths",
+            "title": "行业资金流向（THS）",
+            "description": "获取同花顺行业板块资金流向，每日盘后更新"
+          },
+          {
+            "name": "moneyflow_ind_dc",
+            "title": "板块资金流向（DC）",
+            "description": "获取东方财富板块资金流向，每天盘后更新"
+          },
+          {
+            "name": "moneyflow_mkt_dc",
+            "title": "大盘资金流向（DC）",
+            "description": "获取东方财富大盘资金流向数据，每日盘后更新"
+          },
+          {
+            "name": "moneyflow_ths",
+            "title": "个股资金流向（THS）",
+            "description": "获取同花顺个股资金流向数据，每日盘后更新"
+          },
+          {
+            "name": "moneyflow_dc",
+            "title": "个股资金流向（DC）",
+            "description": "获取东方财富个股资金流向数据，每日盘后更新，数据开始于20230911"
+          }
+        ]
+      },
+      "346": {
+        "name": "打板专题数据",
+        "apis": [
+          {
+            "name": "top_list",
+            "title": "龙虎榜每日统计单",
+            "description": "龙虎榜每日交易明细"
+          },
+          {
+            "name": "top_inst",
+            "title": "龙虎榜机构交易单",
+            "description": "龙虎榜机构成交明细"
+          },
+          {
+            "name": "ths_index",
+            "title": "同花顺行业概念板块",
+            "description": "获取同花顺板块指数。注：数据版权归属同花顺，如做商业用途，请主动联系同花顺，如需帮助请联系微信：waditu_a"
+          },
+          {
+            "name": "ths_member",
+            "title": "同花顺行业概念成分",
+            "description": "获取同花顺概念板块成分列表注：数据版权归属同花顺，如做商业用途，请主动联系同花顺。"
+          },
+          {
+            "name": "limit_list_d",
+            "title": "涨跌停和炸板数据",
+            "description": "获取A股每日涨跌停、炸板数据情况，数据从2020年开始（不提供ST股票的统计）"
+          },
+          {
+            "name": "hm_list",
+            "title": "市场游资最全名录",
+            "description": "获取游资分类名录信息"
+          },
+          {
+            "name": "hm_detail",
+            "title": "游资交易每日明细",
+            "description": "获取每日游资交易明细，数据开始于2022年8。游资分类名录，请点击<a href=\"https://tushare.pro/document/2?doc_id=311\">游资名录</a>"
+          },
+          {
+            "name": "ths_hot",
+            "title": "同花顺App热榜数",
+            "description": "获取同花顺App热榜数据，包括热股、概念板块、ETF、可转债、港美股等等，每日盘中提取4次，收盘后4次，最晚22点提取一次。"
+          },
+          {
+            "name": "dc_hot",
+            "title": "东方财富App热榜",
+            "description": "获取东方财富App热榜数据，包括A股市场、ETF基金、港股市场、美股市场等等，每日盘中提取4次，收盘后4次，最晚22点提取一次。"
+          },
+          {
+            "name": "kpl_list",
+            "title": "榜单数据（开盘啦）",
+            "description": "获取开盘啦涨停、跌停、炸板等榜单数据"
+          },
+          {
+            "name": "kpl_concept",
+            "title": "题材数据（开盘啦）",
+            "description": "获取开盘啦概念题材列表，每天盘后更新"
+          },
+          {
+            "name": "kpl_concept_cons",
+            "title": "题材成分（开盘啦）",
+            "description": "获取开盘啦概念题材的成分股"
+          },
+          {
+            "name": "limit_list_ths",
+            "title": "同花顺涨跌停榜单",
+            "description": "获取同花顺每日涨跌停榜单数据，历史数据从20231101开始提供，增量每天16点左右更新"
+          },
+          {
+            "name": "limit_step",
+            "title": "涨停股票连板天梯",
+            "description": "获取每天连板个数晋级的股票，可以分析出每天连续涨停进阶个数，判断强势热度"
+          },
+          {
+            "name": "limit_cpt_list",
+            "title": "涨停最强板块统计",
+            "description": "获取每天涨停股票最多最强的概念板块，可以分析强势板块的轮动，判断资金动向"
+          },
+          {
+            "name": "dc_index",
+            "title": "东方财富概念板块",
+            "description": "获取东方财富每个交易日的概念板块数据，支持按日期查询"
+          },
+          {
+            "name": "dc_member",
+            "title": "东方财富概念成分",
+            "description": "获取东方财富板块每日成分数据，可以根据概念板块代码和交易日期，获取历史成分"
+          },
+          {
+            "name": "stk_auction",
+            "title": "开盘竞价成交（当日）",
+            "description": "获取当日个股和ETF的集合竞价成交情况，每天9点25后可以获取当日的集合竞价成交数据"
+          }
+        ]
+      }
+    }
+  },
+  "18": {
+    "name": "公募基金",
+    "subcategories": {
+      "19": {
+        "name": "基金列表",
+        "apis": [
+          {
+            "name": "fund_basic",
+            "title": "基金列表",
+            "description": "获取公募基金数据列表，包括场内和场外基金"
+          }
+        ]
+      },
+      "118": {
+        "name": "基金管理人",
+        "apis": [
+          {
+            "name": "fund_company",
+            "title": "基金管理人",
+            "description": "获取公募基金管理人列表"
+          }
+        ]
+      },
+      "119": {
+        "name": "基金净值",
+        "apis": [
+          {
+            "name": "fund_nav",
+            "title": "基金净值",
+            "description": "获取公募基金净值数据"
+          }
+        ]
+      },
+      "120": {
+        "name": "基金分红",
+        "apis": [
+          {
+            "name": "fund_div",
+            "title": "基金分红",
+            "description": "获取公募基金分红数据"
+          }
+        ]
+      },
+      "121": {
+        "name": "基金持仓",
+        "apis": [
+          {
+            "name": "fund_portfolio",
+            "title": "基金持仓",
+            "description": "获取公募基金持仓数据，季度更新"
+          }
+        ]
+      },
+      "127": {
+        "name": "基金行情（含ETF）",
+        "apis": [
+          {
+            "name": "fund_daily",
+            "title": "基金行情（含ETF）",
+            "description": "获取场内基金日线行情，类似股票日行情，包括ETF行情"
+          }
+        ]
+      },
+      "199": {
+        "name": "复权因子",
+        "apis": [
+          {
+            "name": "fund_adj",
+            "title": "复权因子",
+            "description": "获取基金复权因子，用于计算基金复权行情"
+          }
+        ]
+      },
+      "207": {
+        "name": "基金规模",
+        "apis": [
+          {
+            "name": "fund_share",
+            "title": "基金规模",
+            "description": "获取基金规模数据，包含上海和深圳ETF基金"
+          }
+        ]
+      },
+      "208": {
+        "name": "基金经理",
+        "apis": [
+          {
+            "name": "fund_manager",
+            "title": "基金经理",
+            "description": "获取公募基金经理数据，包括基金经理简历等数据"
+          }
+        ]
+      },
+      "359": {
+        "name": "基金技术面因子(专业版)",
+        "apis": [
+          {
+            "name": "fund_factor_pro",
+            "title": "基金技术面因子(专业版)",
+            "description": "获取场内基金每日技术面因子数据，用于跟踪场内基金当前走势情况，数据由Tushare社区自产，覆盖全历史；输出参数_bfq表示不复权，描述中说明了因子的默认传参，如需要特殊参数或者更多因子可以联系管理员评估"
+          }
+        ]
+      }
+    }
+  },
+  "82": {
+    "name": "行业经济",
+    "subcategories": {
+      "83": {
+        "name": "TMT行业",
+        "apis": [
+          {
+            "name": "tmt_twincomedetail",
+            "title": "台湾电子产业月营收明细",
+            "description": "获取台湾TMT行业上市公司各类产品月度营收情况。"
+          },
+          {
+            "name": "tmt_twincome",
+            "title": "台湾电子产业月营收",
+            "description": "获取台湾TMT电子产业领域各类产品月度营收数据。"
+          },
+          {
+            "name": "bo_monthly",
+            "title": "电影月度票房",
+            "description": "获取电影月度票房数据"
+          },
+          {
+            "name": "bo_weekly",
+            "title": "电影周度票房",
+            "description": "获取周度票房数据"
+          },
+          {
+            "name": "bo_daily",
+            "title": "电影日度票房",
+            "description": "获取电影日度票房"
+          },
+          {
+            "name": "bo_cinema",
+            "title": "影院日度票房",
+            "description": "获取每日各影院的票房数据"
+          },
+          {
+            "name": "film_record",
+            "title": "全国电影剧本备案数据",
+            "description": "获取全国电影剧本备案的公示数据"
+          },
+          {
+            "name": "teleplay_record",
+            "title": "全国电视剧备案公示数据",
+            "description": "获取2009年以来全国拍摄制作电视剧备案公示数据"
+          }
+        ]
+      }
+    }
+  },
+  "93": {
+    "name": "指数专题",
+    "subcategories": {
+      "94": {
+        "name": "指数基本信息",
+        "apis": [
+          {
+            "name": "index_basic",
+            "title": "指数基本信息",
+            "description": "获取指数基础信息。"
+          }
+        ]
+      },
+      "95": {
+        "name": "指数日线行情",
+        "apis": []
+      },
+      "96": {
+        "name": "指数成分和权重",
+        "apis": [
+          {
+            "name": "index_weight",
+            "title": "指数成分和权重",
+            "description": "获取各类指数成分和权重，**月度数据** ，建议输入参数里开始日期和结束日分别输入当月第一天和最后一天的日期。"
+          }
+        ]
+      },
+      "128": {
+        "name": "大盘指数每日指标",
+        "apis": [
+          {
+            "name": "index_dailybasic",
+            "title": "大盘指数每日指标",
+            "description": "目前只提供上证综指，深证成指，上证50，中证500，中小板指，创业板指的每日指标数据"
+          }
+        ]
+      },
+      "171": {
+        "name": "指数周线行情",
+        "apis": [
+          {
+            "name": "index_weekly",
+            "title": "指数周线行情",
+            "description": "获取指数周线行情"
+          }
+        ]
+      },
+      "172": {
+        "name": "指数月线行情",
+        "apis": [
+          {
+            "name": "index_monthly",
+            "title": "指数月线行情",
+            "description": "获取指数月线行情,每月更新一次"
+          }
+        ]
+      },
+      "181": {
+        "name": "申万行业分类",
+        "apis": [
+          {
+            "name": "index_classify",
+            "title": "申万行业分类",
+            "description": "获取申万行业分类，可以获取申万2014年版本（28个一级分类，104个二级分类，227个三级分类）和2021年本版（31个一级分类，134个二级分类，346个三级分类）列表信息"
+          }
+        ]
+      },
+      "211": {
+        "name": "国际主要指数",
+        "apis": [
+          {
+            "name": "index_global",
+            "title": "国际主要指数",
+            "description": "获取国际主要指数日线行情"
+          }
+        ]
+      },
+      "215": {
+        "name": "沪深市场每日交易统计",
+        "apis": [
+          {
+            "name": "daily_info",
+            "title": "沪深市场每日交易统计",
+            "description": "获取交易所股票交易统计，包括各板块明细"
+          }
+        ]
+      },
+      "260": {
+        "name": "同花顺概念和行业指数行情",
+        "apis": [
+          {
+            "name": "ths_daily",
+            "title": "同花顺概念和行业指数行情",
+            "description": "获取同花顺板块指数行情。注：数据版权归属同花顺，如做商业用途，请主动联系同花顺，如需帮助请联系微信：waditu_a"
+          }
+        ]
+      },
+      "268": {
+        "name": "深圳市场每日交易情况",
+        "apis": [
+          {
+            "name": "sz_daily_info",
+            "title": "深圳市场每日交易情况",
+            "description": "获取深圳市场每日交易概况"
+          }
+        ]
+      },
+      "308": {
+        "name": "中信行业指数日行情",
+        "apis": [
+          {
+            "name": "ci_daily",
+            "title": "中信行业指数日行情",
+            "description": "获取中信行业指数日线行情"
+          }
+        ]
+      },
+      "327": {
+        "name": "申万行业指数日行情",
+        "apis": [
+          {
+            "name": "sw_daily",
+            "title": "申万行业指数日行情",
+            "description": "获取申万行业日线行情（默认是申万2021版行情）"
+          }
+        ]
+      },
+      "335": {
+        "name": "申万行业成分（分级）",
+        "apis": [
+          {
+            "name": "index_member_all",
+            "title": "申万行业成分（分级）",
+            "description": "按三级分类提取申万行业成分，可提供某个分类的所有成分，也可按股票代码提取所属分类，参数灵活"
+          }
+        ]
+      },
+      "358": {
+        "name": "指数技术面因子(专业版)",
+        "apis": [
+          {
+            "name": "idx_factor_pro",
+            "title": "指数技术面因子(专业版)",
+            "description": "获取指数每日技术面因子数据，用于跟踪指数当前走势情况，数据由Tushare社区自产，覆盖全历史；输出参数_bfq表示不复权描述中说明了因子的默认传参，如需要特殊参数或者更多因子可以联系管理员评估，指数包括大盘指数 申万行业指数 中信指数"
+          }
+        ]
+      }
+    }
+  },
+  "134": {
+    "name": "期货数据",
+    "subcategories": {
+      "135": {
+        "name": "合约信息",
+        "apis": [
+          {
+            "name": "fut_basic",
+            "title": "合约信息",
+            "description": "获取期货合约列表数据"
+          }
+        ]
+      },
+      "137": {
+        "name": "交易日历",
+        "apis": [
+          {
+            "name": "trade_cal",
+            "title": "交易日历",
+            "description": "获取各大期货交易所交易日历数据"
+          }
+        ]
+      },
+      "138": {
+        "name": "日线行情",
+        "apis": [
+          {
+            "name": "fut_daily",
+            "title": "日线行情",
+            "description": "期货日线行情数据"
+          }
+        ]
+      },
+      "139": {
+        "name": "每日持仓排名",
+        "apis": [
+          {
+            "name": "fut_holding",
+            "title": "每日持仓排名",
+            "description": "获取每日成交持仓排名数据"
+          }
+        ]
+      },
+      "140": {
+        "name": "仓单日报",
+        "apis": [
+          {
+            "name": "fut_wsr",
+            "title": "仓单日报",
+            "description": "获取仓单日报数据，了解各仓库/厂库的仓单变化"
+          }
+        ]
+      },
+      "141": {
+        "name": "每日结算参数",
+        "apis": [
+          {
+            "name": "fut_settle",
+            "title": "每日结算参数",
+            "description": "获取每日结算参数数据，包括交易和交割费率等"
+          }
+        ]
+      },
+      "155": {
+        "name": "南华期货指数行情",
+        "apis": [
+          {
+            "name": "index_daily",
+            "title": "南华期货指数行情",
+            "description": "获取南华指数每日行情，指数行情也可以通过[**通用行情接口**]( https://tushare.pro/document/2?doc_id=109)获取数据．"
+          }
+        ]
+      },
+      "189": {
+        "name": "期货主力与连续合约",
+        "apis": [
+          {
+            "name": "fut_mapping",
+            "title": "期货主力与连续合约",
+            "description": "获取期货主力（或连续）合约与月合约映射数据"
+          }
+        ]
+      },
+      "216": {
+        "name": "期货主要品种交易周报",
+        "apis": [
+          {
+            "name": "fut_weekly_detail",
+            "title": "期货主要品种交易周报",
+            "description": "获取期货交易所主要品种每周交易统计信息，数据从2010年3月开始"
+          }
+        ]
+      },
+      "313": {
+        "name": "历史分钟行情",
+        "apis": [
+          {
+            "name": "ft_mins",
+            "title": "历史分钟行情",
+            "description": "获取全市场期货合约分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK和 http Restful API两种方式，如果需要主力合约分钟，请先通过主力[mapping](https://tushare.pro/document/2?doc_id=189)接口获取对应的合约代码后提取分钟。"
+          }
+        ]
+      },
+      "314": {
+        "name": "历史Tick行情",
+        "apis": []
+      },
+      "337": {
+        "name": "期货周/月线行情(每日更新)",
+        "apis": [
+          {
+            "name": "fut_weekly_monthly",
+            "title": "期货周/月线行情(每日更新)",
+            "description": "期货周/月线行情(每日更新)"
+          }
+        ]
+      },
+      "340": {
+        "name": "实时分钟行情",
+        "apis": [
+          {
+            "name": "rt_fut_min",
+            "title": "实时分钟行情",
+            "description": "获取全市场期货合约实时分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK、 http Restful API和websocket三种方式，如果需要主力合约分钟，请先通过主力[mapping](https://tushare.pro/document/2?doc_id=189)接口获取对应的合约代码后提取分钟。"
+          }
+        ]
+      },
+      "368": {
+        "name": "期货合约涨跌停价格",
+        "apis": [
+          {
+            "name": "ft_limit",
+            "title": "期货合约涨跌停价格",
+            "description": "获取所有期货合约每天的涨跌停价格及最低保证金率，数据开始于2005年。"
+          }
+        ]
+      }
+    }
+  },
+  "142": {
+    "name": "大模型语料专题数据",
+    "subcategories": {
+      "143": {
+        "name": "新闻快讯",
+        "apis": [
+          {
+            "name": "news",
+            "title": "新闻快讯",
+            "description": "获取主流新闻网站的快讯新闻数据"
+          }
+        ]
+      },
+      "154": {
+        "name": "新闻联播文字稿",
+        "apis": [
+          {
+            "name": "cctv_news",
+            "title": "新闻联播文字稿",
+            "description": "获取新闻联播文字稿数据，数据开始于2006年6月，超过12年历史"
+          }
+        ]
+      },
+      "176": {
+        "name": "上市公司公告",
+        "apis": [
+          {
+            "name": "anns_d",
+            "title": "上市公司公告",
+            "description": "获取全量公告数据，提供pdf下载URL"
+          }
+        ]
+      },
+      "195": {
+        "name": "新闻通讯（长篇）",
+        "apis": [
+          {
+            "name": "major_news",
+            "title": "新闻通讯（长篇）",
+            "description": "获取长篇通讯信息，覆盖主要新闻资讯网站"
+          }
+        ]
+      },
+      "366": {
+        "name": "上证e互动问答",
+        "apis": []
+      },
+      "367": {
+        "name": "深证易互动问答",
+        "apis": []
+      }
+    }
+  },
+  "147": {
+    "name": "宏观经济",
+    "subcategories": {
+      "217": {
+        "name": "国际宏观",
+        "apis": [
+          {
+            "name": "us_tycr",
+            "title": "国债收益率曲线利率",
+            "description": "获取美国每日国债收益率曲线利率"
+          },
+          {
+            "name": "us_trycr",
+            "title": "国债实际收益率曲线利率",
+            "description": "国债实际收益率曲线利率"
+          },
+          {
+            "name": "us_tbr",
+            "title": "短期国债利率",
+            "description": "获取美国短期国债利率数据"
+          },
+          {
+            "name": "us_tltr",
+            "title": "国债长期利率",
+            "description": "国债长期利率"
+          },
+          {
+            "name": "us_trltr",
+            "title": "国债长期利率平均值",
+            "description": "国债实际长期利率平均值"
+          }
+        ]
+      },
+      "224": {
+        "name": "国内宏观",
+        "apis": [
+          {
+            "name": "shibor",
+            "title": "Shibor利率",
+            "description": "shibor利率"
+          },
+          {
+            "name": "shibor_quote",
+            "title": "Shibor报价数据",
+            "description": "Shibor报价数据"
+          },
+          {
+            "name": "shibor_lpr",
+            "title": "LPR贷款基础利率",
+            "description": "LPR贷款基础利率"
+          },
+          {
+            "name": "libor",
+            "title": "Libor利率",
+            "description": "Libor拆借利率"
+          },
+          {
+            "name": "hibor",
+            "title": "Hibor利率",
+            "description": "Hibor利率"
+          },
+          {
+            "name": "wz_index",
+            "title": "温州民间借贷利率",
+            "description": "温州民间借贷利率，即温州指数"
+          },
+          {
+            "name": "gz_index",
+            "title": "广州民间借贷利率",
+            "description": "广州民间借贷利率"
+          },
+          {
+            "name": "cn_gdp",
+            "title": "国内生产总值（GDP）",
+            "description": "获取国民经济之GDP数据"
+          },
+          {
+            "name": "cn_cpi",
+            "title": "居民消费价格指数（CPI）",
+            "description": "获取CPI居民消费价格数据，包括全国、城市和农村的数据"
+          },
+          {
+            "name": "cn_m",
+            "title": "货币供应量（月）",
+            "description": "获取货币供应量之月度数据"
+          },
+          {
+            "name": "cn_ppi",
+            "title": "工业生产者出厂价格指数（PPI）",
+            "description": "获取PPI工业生产者出厂价格指数数据"
+          },
+          {
+            "name": "sf_month",
+            "title": "社融增量（月度）",
+            "description": "获取月度社会融资数据"
+          },
+          {
+            "name": "cn_pmi",
+            "title": "采购经理指数（PMI）",
+            "description": "采购经理人指数"
+          }
+        ]
+      }
+    }
+  },
+  "157": {
+    "name": "期权数据",
+    "subcategories": {
+      "158": {
+        "name": "期权合约信息",
+        "apis": [
+          {
+            "name": "opt_basic",
+            "title": "期权合约信息",
+            "description": "获取期权合约信息"
+          }
+        ]
+      },
+      "159": {
+        "name": "期权日线行情",
+        "apis": [
+          {
+            "name": "opt_daily",
+            "title": "期权日线行情",
+            "description": "获取期权日线行情"
+          }
+        ]
+      },
+      "341": {
+        "name": "期权分钟行情",
+        "apis": [
+          {
+            "name": "opt_mins",
+            "title": "期权分钟行情",
+            "description": "获取全市场期权合约分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK和 http Restful API两种方式。"
+          }
+        ]
+      }
+    }
+  },
+  "177": {
+    "name": "外汇数据",
+    "subcategories": {
+      "178": {
+        "name": "外汇基础信息（海外）",
+        "apis": [
+          {
+            "name": "fx_obasic",
+            "title": "外汇基础信息（海外）",
+            "description": "获取海外外汇基础信息，目前只有FXCM交易商的数据"
+          }
+        ]
+      },
+      "179": {
+        "name": "外汇日线行情",
+        "apis": [
+          {
+            "name": "fx_daily",
+            "title": "外汇日线行情",
+            "description": "获取外汇日线行情"
+          }
+        ]
+      }
+    }
+  },
+  "184": {
+    "name": "债券专题",
+    "subcategories": {
+      "185": {
+        "name": "可转债基础信息",
+        "apis": [
+          {
+            "name": "cb_basic",
+            "title": "可转债基础信息",
+            "description": "获取可转债基本信息"
+          }
+        ]
+      },
+      "186": {
+        "name": "可转债发行",
+        "apis": [
+          {
+            "name": "cb_issue",
+            "title": "可转债发行",
+            "description": "获取可转债发行数据"
+          }
+        ]
+      },
+      "187": {
+        "name": "可转债行情",
+        "apis": [
+          {
+            "name": "cb_daily",
+            "title": "可转债行情",
+            "description": "获取可转债行情"
+          }
+        ]
+      },
+      "201": {
+        "name": "国债收益率曲线",
+        "apis": [
+          {
+            "name": "yc_cb",
+            "title": "国债收益率曲线",
+            "description": "获取中债收益率曲线，目前可获取中债国债收益率曲线即期和到期收益率曲线数据"
+          }
+        ]
+      },
+      "233": {
+        "name": "全球财经事件",
+        "apis": [
+          {
+            "name": "eco_cal",
+            "title": "全球财经事件",
+            "description": "获取全球财经日历、包括经济事件数据更新"
+          }
+        ]
+      },
+      "246": {
+        "name": "可转债转股价变动",
+        "apis": [
+          {
+            "name": "cb_price_chg",
+            "title": "可转债转股价变动",
+            "description": "获取可转债转股价变动"
+          }
+        ]
+      },
+      "247": {
+        "name": "可转债转股结果",
+        "apis": [
+          {
+            "name": "cb_share",
+            "title": "可转债转股结果",
+            "description": "获取可转债转股结果"
+          }
+        ]
+      },
+      "256": {
+        "name": "债券回购日行情",
+        "apis": [
+          {
+            "name": "repo_daily",
+            "title": "债券回购日行情",
+            "description": "债券回购日行情"
+          }
+        ]
+      },
+      "269": {
+        "name": "可转债赎回信息",
+        "apis": [
+          {
+            "name": "cb_call",
+            "title": "可转债赎回信息",
+            "description": "获取可转债到期赎回、强制赎回等信息。数据来源于公开披露渠道，供个人和机构研究使用，请不要用于数据商业目的。"
+          }
+        ]
+      },
+      "271": {
+        "name": "大宗交易",
+        "apis": [
+          {
+            "name": "bond_blk",
+            "title": "大宗交易",
+            "description": "获取沪深交易所债券大宗交易数据，可以通过[**数据工具**](https://tushare.pro/webclient/)调试和查看数据。"
+          },
+          {
+            "name": "bond_blk_detail",
+            "title": "大宗交易明细",
+            "description": "获取沪深交易所债券大宗交易数据，可以通过[**数据工具**](https://tushare.pro/webclient/)调试和查看数据。"
+          }
+        ]
+      },
+      "272": {
+        "name": "大宗交易明细",
+        "apis": [
+          {
+            "name": "bond_blk_detail",
+            "title": "大宗交易明细",
+            "description": "获取沪深交易所债券大宗交易数据，可以通过[**数据工具**](https://tushare.pro/webclient/)调试和查看数据。"
+          }
+        ]
+      },
+      "305": {
+        "name": "可转债票面利率",
+        "apis": [
+          {
+            "name": "cb_rate",
+            "title": "可转债票面利率",
+            "description": "获取可转债票面利率"
+          }
+        ]
+      },
+      "322": {
+        "name": "柜台流通式债券报价",
+        "apis": [
+          {
+            "name": "bc_otcqt",
+            "title": "柜台流通式债券报价",
+            "description": "柜台流通式债券报价"
+          }
+        ]
+      },
+      "323": {
+        "name": "柜台流通式债券最优报价",
+        "apis": [
+          {
+            "name": "bc_bestotcqt",
+            "title": "柜台流通式债券最优报价",
+            "description": "柜台流通式债券最优报价"
+          }
+        ]
+      }
+    }
+  },
+  "190": {
+    "name": "港股数据",
+    "subcategories": {
+      "191": {
+        "name": "港股基础信息",
+        "apis": [
+          {
+            "name": "hk_basic",
+            "title": "港股基础信息",
+            "description": "获取港股列表信息"
+          }
+        ]
+      },
+      "192": {
+        "name": "港股日线行情",
+        "apis": [
+          {
+            "name": "hk_daily",
+            "title": "港股日线行情",
+            "description": "获取港股每日增量和历史行情，每日18点左右更新当日数据"
+          }
+        ]
+      },
+      "250": {
+        "name": "港股交易日历",
+        "apis": [
+          {
+            "name": "hk_tradecal",
+            "title": "港股交易日历",
+            "description": "获取交易日历"
+          }
+        ]
+      },
+      "304": {
+        "name": "港股分钟行情",
+        "apis": [
+          {
+            "name": "hk_mins",
+            "title": "港股分钟行情",
+            "description": "港股分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK和 http Restful API两种方式"
+          }
+        ]
+      },
+      "339": {
+        "name": "港股复权行情",
+        "apis": [
+          {
+            "name": "hk_daily_adj",
+            "title": "港股复权行情",
+            "description": "获取港股复权行情，提供股票股本、市值和成交及换手多个数据指标"
+          }
+        ]
+      }
+    }
+  },
+  "209": {
+    "name": "数据索引",
+    "subcategories": {}
+  },
+  "244": {
+    "name": "社区捐助",
+    "subcategories": {}
+  },
+  "251": {
+    "name": "美股数据",
+    "subcategories": {
+      "252": {
+        "name": "美股基础信息",
+        "apis": [
+          {
+            "name": "us_basic",
+            "title": "美股基础信息",
+            "description": "获取美股列表信息"
+          }
+        ]
+      },
+      "253": {
+        "name": "美股交易日历",
+        "apis": [
+          {
+            "name": "us_tradecal",
+            "title": "美股交易日历",
+            "description": "获取美股交易日历信息"
+          }
+        ]
+      },
+      "254": {
+        "name": "美股日线行情",
+        "apis": [
+          {
+            "name": "us_daily",
+            "title": "美股日线行情",
+            "description": "获取美股行情（未复权），包括全部股票全历史行情，以及重要的市场和估值指标"
+          }
+        ]
+      },
+      "338": {
+        "name": "美股复权行情",
+        "apis": [
+          {
+            "name": "us_daily_adj",
+            "title": "美股复权行情",
+            "description": "获取美股复权行情，支持美股全市场股票，提供股本、市值、复权因子和成交信息等多个数据指标"
+          }
+        ]
+      }
+    }
+  },
+  "255": {
+    "name": "备用行情",
+    "subcategories": {}
+  },
+  "256": {
+    "name": "债券回购日行情",
+    "subcategories": {}
+  },
+  "259": {
+    "name": "同花顺行业概念板块",
+    "subcategories": {}
+  },
+  "260": {
+    "name": "同花顺概念和行业指数行情",
+    "subcategories": {}
+  },
+  "261": {
+    "name": "同花顺行业概念成分",
+    "subcategories": {}
+  },
+  "262": {
+    "name": "股票历史列表",
+    "subcategories": {}
+  },
+  "263": {
+    "name": "财富管理",
+    "subcategories": {
+      "264": {
+        "name": "基金销售行业数据",
+        "apis": [
+          {
+            "name": "fund_sales_ratio",
+            "title": "各渠道公募基金销售保有规模占比",
+            "description": "获取各渠道公募基金销售保有规模占比数据，年度更新"
+          },
+          {
+            "name": "fund_sales_vol",
+            "title": "销售机构公募基金销售保有规模",
+            "description": "获取销售机构公募基金销售保有规模数据，本数据从2021年Q1开始公布，季度更新"
+          }
+        ]
+      }
+    }
+  },
+  "264": {
+    "name": "基金销售行业数据",
+    "subcategories": {
+      "265": {
+        "name": "各渠道公募基金销售保有规模占比",
+        "apis": [
+          {
+            "name": "fund_sales_ratio",
+            "title": "各渠道公募基金销售保有规模占比",
+            "description": "获取各渠道公募基金销售保有规模占比数据，年度更新"
+          }
+        ]
+      },
+      "266": {
+        "name": "销售机构公募基金销售保有规模",
+        "apis": [
+          {
+            "name": "fund_sales_vol",
+            "title": "销售机构公募基金销售保有规模",
+            "description": "获取销售机构公募基金销售保有规模数据，本数据从2021年Q1开始公布，季度更新"
+          }
+        ]
+      }
+    }
+  },
+  "265": {
+    "name": "各渠道公募基金销售保有规模占比",
+    "subcategories": {}
+  },
+  "266": {
+    "name": "销售机构公募基金销售保有规模",
+    "subcategories": {}
+  },
+  "267": {
+    "name": "券商月度金股",
+    "subcategories": {}
+  },
+  "268": {
+    "name": "深圳市场每日交易情况",
+    "subcategories": {}
+  },
+  "269": {
+    "name": "可转债赎回信息",
+    "subcategories": {}
+  },
+  "271": {
+    "name": "大宗交易",
+    "subcategories": {}
+  },
+  "272": {
+    "name": "大宗交易明细",
+    "subcategories": {}
+  },
+  "274": {
+    "name": "中央结算系统持股明细",
+    "subcategories": {}
+  },
+  "275": {
+    "name": "机构调研数据",
+    "subcategories": {}
+  },
+  "283": {
+    "name": "现货数据",
+    "subcategories": {
+      "284": {
+        "name": "上海黄金基础信息",
+        "apis": [
+          {
+            "name": "sge_basic",
+            "title": "上海黄金基础信息",
+            "description": "获取上海黄金交易所现货合约基础信息"
+          }
+        ]
+      },
+      "285": {
+        "name": "上海黄金现货日行情",
+        "apis": [
+          {
+            "name": "sge_daily",
+            "title": "上海黄金现货日行情",
+            "description": "获取上海黄金交易所现货合约日线行情"
+          }
+        ]
+      }
+    }
+  },
+  "284": {
+    "name": "上海黄金基础信息",
+    "subcategories": {}
+  },
+  "285": {
+    "name": "上海黄金现货日行情",
+    "subcategories": {}
+  },
+  "291": {
+    "name": "特色数据",
+    "subcategories": {
+      "292": {
+        "name": "券商盈利预测数据",
+        "apis": [
+          {
+            "name": "report_rc",
+            "title": "券商盈利预测数据",
+            "description": "获取券商（卖方）每天研报的盈利预测数据，数据从2010年开始，每晚19~22点更新当日数据"
+          }
+        ]
+      },
+      "293": {
+        "name": "每日筹码及胜率",
+        "apis": [
+          {
+            "name": "cyq_perf",
+            "title": "每日筹码及胜率",
+            "description": "获取A股每日筹码平均成本和胜率情况，每天17~18点左右更新，数据从2018年开始"
+          }
+        ]
+      },
+      "294": {
+        "name": "每日筹码分布",
+        "apis": [
+          {
+            "name": "cyq_chips",
+            "title": "每日筹码分布",
+            "description": "获取A股每日的筹码分布情况，提供各价位占比，数据从2018年开始，每天17~18点之间更新当日数据"
+          }
+        ]
+      },
+      "295": {
+        "name": "中央结算系统持股统计",
+        "apis": [
+          {
+            "name": "ccass_hold",
+            "title": "中央结算系统持股统计",
+            "description": "获取中央结算系统持股汇总数据，覆盖全部历史数据，根据交易所披露时间，当日数据在下一交易日早上9点前完成入库"
+          }
+        ]
+      },
+      "296": {
+        "name": "股票技术面因子",
+        "apis": [
+          {
+            "name": "stk_factor",
+            "title": "股票技术面因子",
+            "description": "获取股票每日技术面因子数据，用于跟踪股票当前走势情况，数据由Tushare社区自产，覆盖全历史"
+          },
+          {
+            "name": "stk_factor_pro",
+            "title": "股票技术面因子(专业版）",
+            "description": "获取股票每日技术面因子数据，用于跟踪股票当前走势情况，数据由Tushare社区自产，覆盖全历史；输出参数_bfq表示不复权，_qfq表示前复权 _hfq表示后复权，描述中说明了因子的默认传参，如需要特殊参数或者更多因子可以联系管理员评估"
+          }
+        ]
+      },
+      "328": {
+        "name": "股票技术面因子(专业版）",
+        "apis": [
+          {
+            "name": "stk_factor_pro",
+            "title": "股票技术面因子(专业版）",
+            "description": "获取股票每日技术面因子数据，用于跟踪股票当前走势情况，数据由Tushare社区自产，覆盖全历史；输出参数_bfq表示不复权，_qfq表示前复权 _hfq表示后复权，描述中说明了因子的默认传参，如需要特殊参数或者更多因子可以联系管理员评估"
+          }
+        ]
+      },
+      "353": {
+        "name": "股票开盘集合竞价数据",
+        "apis": [
+          {
+            "name": "stk_auction_o",
+            "title": "股票开盘集合竞价数据",
+            "description": "股票开盘9:30集合竞价数据，每天盘后更新"
+          }
+        ]
+      },
+      "354": {
+        "name": "股票收盘集合竞价数据",
+        "apis": [
+          {
+            "name": "stk_auction_c",
+            "title": "股票收盘集合竞价数据",
+            "description": "股票收盘15:00集合竞价数据，每天盘后更新"
+          }
+        ]
+      },
+      "364": {
+        "name": "神奇九转指标",
+        "apis": [
+          {
+            "name": "stk_nineturn（由于涉及分钟数据每天21点更新）",
+            "title": "神奇九转指标",
+            "description": "神奇九转（又称“九转序列”）是一种基于技术分析的股票趋势反转指标，其思想来源于技术分析大师汤姆·迪马克（Tom DeMark）的TD序列。该指标的核心功能是通过识别股价在上涨或下跌过程中连续9天的特定走势，来判断股价的潜在反转点，从而帮助投资者提高抄底和逃顶的成功率，日线级别配合60min的九转效果更好，数据从20230101开始。"
+          }
+        ]
+      }
+    }
+  },
+  "292": {
+    "name": "券商盈利预测数据",
+    "subcategories": {}
+  },
+  "293": {
+    "name": "每日筹码及胜率",
+    "subcategories": {}
+  },
+  "294": {
+    "name": "每日筹码分布",
+    "subcategories": {}
+  },
+  "295": {
+    "name": "中央结算系统持股统计",
+    "subcategories": {}
+  },
+  "296": {
+    "name": "股票技术面因子",
+    "subcategories": {}
+  },
+  "298": {
+    "name": "涨跌停和炸板数据",
+    "subcategories": {}
+  },
+  "300": {
+    "name": "动能因子",
+    "subcategories": {}
+  },
+  "303": {
+    "name": "估值因子",
+    "subcategories": {}
+  },
+  "304": {
+    "name": "港股分钟行情",
+    "subcategories": {}
+  },
+  "305": {
+    "name": "可转债票面利率",
+    "subcategories": {}
+  },
+  "308": {
+    "name": "中信行业指数日行情",
+    "subcategories": {}
+  },
+  "310": {
+    "name": "社融增量（月度）",
+    "subcategories": {}
+  },
+  "311": {
+    "name": "市场游资最全名录",
+    "subcategories": {}
+  },
+  "312": {
+    "name": "游资交易每日明细",
+    "subcategories": {}
+  },
+  "313": {
+    "name": "历史分钟行情",
+    "subcategories": {}
+  },
+  "314": {
+    "name": "历史Tick行情",
+    "subcategories": {}
+  },
+  "315": {
+    "name": "实时行情（爬虫）",
+    "subcategories": {}
+  },
+  "316": {
+    "name": "实时成交（爬虫）",
+    "subcategories": {}
+  },
+  "317": {
+    "name": "实时排名（爬虫）",
+    "subcategories": {}
+  },
+  "320": {
+    "name": "同花顺App热榜数",
+    "subcategories": {}
+  },
+  "321": {
+    "name": "东方财富App热榜",
+    "subcategories": {}
+  },
+  "322": {
+    "name": "柜台流通式债券报价",
+    "subcategories": {}
+  },
+  "323": {
+    "name": "柜台流通式债券最优报价",
+    "subcategories": {}
+  },
+  "324": {
+    "name": "景气度",
+    "subcategories": {
+      "325": {
+        "name": "采购经理指数（PMI）",
+        "apis": [
+          {
+            "name": "cn_pmi",
+            "title": "采购经理指数（PMI）",
+            "description": "采购经理人指数"
+          }
+        ]
+      }
+    }
+  },
+  "325": {
+    "name": "采购经理指数（PMI）",
+    "subcategories": {}
+  },
+  "326": {
+    "name": "融资融券标的（盘前）",
+    "subcategories": {}
+  },
+  "327": {
+    "name": "申万行业指数日行情",
+    "subcategories": {}
+  },
+  "328": {
+    "name": "股票技术面因子(专业版）",
+    "subcategories": {}
+  },
+  "329": {
+    "name": "每日股本（盘前）",
+    "subcategories": {}
+  },
+  "330": {
+    "name": "两融及转融通",
+    "subcategories": {
+      "331": {
+        "name": "转融资交易汇总",
+        "apis": [
+          {
+            "name": "slb_len",
+            "title": "转融资交易汇总",
+            "description": "转融通融资汇总"
+          }
+        ]
+      },
+      "332": {
+        "name": "转融券交易汇总",
+        "apis": [
+          {
+            "name": "slb_sec",
+            "title": "转融券交易汇总",
+            "description": "转融通转融券交易汇总"
+          }
+        ]
+      },
+      "333": {
+        "name": "转融券交易明细",
+        "apis": [
+          {
+            "name": "slb_sec_detail",
+            "title": "转融券交易明细",
+            "description": "转融券交易明细"
+          }
+        ]
+      },
+      "334": {
+        "name": "做市借券交易汇总",
+        "apis": [
+          {
+            "name": "slb_len_mm",
+            "title": "做市借券交易汇总",
+            "description": "做市借券交易汇总"
+          }
+        ]
+      }
+    }
+  },
+  "331": {
+    "name": "转融资交易汇总",
+    "subcategories": {}
+  },
+  "332": {
+    "name": "转融券交易汇总",
+    "subcategories": {}
+  },
+  "333": {
+    "name": "转融券交易明细",
+    "subcategories": {}
+  },
+  "334": {
+    "name": "做市借券交易汇总",
+    "subcategories": {}
+  },
+  "335": {
+    "name": "申万行业成分（分级）",
+    "subcategories": {}
+  },
+  "336": {
+    "name": "周/月线行情(每日更新)",
+    "subcategories": {}
+  },
+  "337": {
+    "name": "期货周/月线行情(每日更新)",
+    "subcategories": {}
+  },
+  "338": {
+    "name": "美股复权行情",
+    "subcategories": {}
+  },
+  "339": {
+    "name": "港股复权行情",
+    "subcategories": {}
+  },
+  "340": {
+    "name": "实时分钟行情",
+    "subcategories": {}
+  },
+  "341": {
+    "name": "期权分钟行情",
+    "subcategories": {}
+  },
+  "342": {
+    "name": "资金流向数据",
+    "subcategories": {
+      "343": {
+        "name": "行业资金流向（THS）",
+        "apis": [
+          {
+            "name": "moneyflow_ind_ths",
+            "title": "行业资金流向（THS）",
+            "description": "获取同花顺行业板块资金流向，每日盘后更新"
+          }
+        ]
+      },
+      "344": {
+        "name": "板块资金流向（DC）",
+        "apis": [
+          {
+            "name": "moneyflow_ind_dc",
+            "title": "板块资金流向（DC）",
+            "description": "获取东方财富板块资金流向，每天盘后更新"
+          }
+        ]
+      },
+      "345": {
+        "name": "大盘资金流向（DC）",
+        "apis": [
+          {
+            "name": "moneyflow_mkt_dc",
+            "title": "大盘资金流向（DC）",
+            "description": "获取东方财富大盘资金流向数据，每日盘后更新"
+          }
+        ]
+      },
+      "348": {
+        "name": "个股资金流向（THS）",
+        "apis": [
+          {
+            "name": "moneyflow_ths",
+            "title": "个股资金流向（THS）",
+            "description": "获取同花顺个股资金流向数据，每日盘后更新"
+          }
+        ]
+      },
+      "349": {
+        "name": "个股资金流向（DC）",
+        "apis": [
+          {
+            "name": "moneyflow_dc",
+            "title": "个股资金流向（DC）",
+            "description": "获取东方财富个股资金流向数据，每日盘后更新，数据开始于20230911"
+          }
+        ]
+      }
+    }
+  },
+  "343": {
+    "name": "行业资金流向（THS）",
+    "subcategories": {}
+  },
+  "344": {
+    "name": "板块资金流向（DC）",
+    "subcategories": {}
+  },
+  "345": {
+    "name": "大盘资金流向（DC）",
+    "subcategories": {}
+  },
+  "346": {
+    "name": "打板专题数据",
+    "subcategories": {
+      "347": {
+        "name": "榜单数据（开盘啦）",
+        "apis": [
+          {
+            "name": "kpl_list",
+            "title": "榜单数据（开盘啦）",
+            "description": "获取开盘啦涨停、跌停、炸板等榜单数据"
+          }
+        ]
+      },
+      "350": {
+        "name": "题材数据（开盘啦）",
+        "apis": [
+          {
+            "name": "kpl_concept",
+            "title": "题材数据（开盘啦）",
+            "description": "获取开盘啦概念题材列表，每天盘后更新"
+          }
+        ]
+      },
+      "351": {
+        "name": "题材成分（开盘啦）",
+        "apis": [
+          {
+            "name": "kpl_concept_cons",
+            "title": "题材成分（开盘啦）",
+            "description": "获取开盘啦概念题材的成分股"
+          }
+        ]
+      },
+      "355": {
+        "name": "同花顺涨跌停榜单",
+        "apis": [
+          {
+            "name": "limit_list_ths",
+            "title": "同花顺涨跌停榜单",
+            "description": "获取同花顺每日涨跌停榜单数据，历史数据从20231101开始提供，增量每天16点左右更新"
+          }
+        ]
+      },
+      "356": {
+        "name": "涨停股票连板天梯",
+        "apis": [
+          {
+            "name": "limit_step",
+            "title": "涨停股票连板天梯",
+            "description": "获取每天连板个数晋级的股票，可以分析出每天连续涨停进阶个数，判断强势热度"
+          }
+        ]
+      },
+      "357": {
+        "name": "涨停最强板块统计",
+        "apis": [
+          {
+            "name": "limit_cpt_list",
+            "title": "涨停最强板块统计",
+            "description": "获取每天涨停股票最多最强的概念板块，可以分析强势板块的轮动，判断资金动向"
+          }
+        ]
+      },
+      "362": {
+        "name": "东方财富概念板块",
+        "apis": [
+          {
+            "name": "dc_index",
+            "title": "东方财富概念板块",
+            "description": "获取东方财富每个交易日的概念板块数据，支持按日期查询"
+          }
+        ]
+      },
+      "363": {
+        "name": "东方财富概念成分",
+        "apis": [
+          {
+            "name": "dc_member",
+            "title": "东方财富概念成分",
+            "description": "获取东方财富板块每日成分数据，可以根据概念板块代码和交易日期，获取历史成分"
+          }
+        ]
+      },
+      "369": {
+        "name": "开盘竞价成交（当日）",
+        "apis": [
+          {
+            "name": "stk_auction",
+            "title": "开盘竞价成交（当日）",
+            "description": "获取当日个股和ETF的集合竞价成交情况，每天9点25后可以获取当日的集合竞价成交数据"
+          }
+        ]
+      }
+    }
+  },
+  "347": {
+    "name": "榜单数据（开盘啦）",
+    "subcategories": {}
+  },
+  "348": {
+    "name": "个股资金流向（THS）",
+    "subcategories": {}
+  },
+  "349": {
+    "name": "个股资金流向（DC）",
+    "subcategories": {}
+  },
+  "350": {
+    "name": "题材数据（开盘啦）",
+    "subcategories": {}
+  },
+  "351": {
+    "name": "题材成分（开盘啦）",
+    "subcategories": {}
+  },
+  "353": {
+    "name": "股票开盘集合竞价数据",
+    "subcategories": {}
+  },
+  "354": {
+    "name": "股票收盘集合竞价数据",
+    "subcategories": {}
+  },
+  "355": {
+    "name": "同花顺涨跌停榜单",
+    "subcategories": {}
+  },
+  "356": {
+    "name": "涨停股票连板天梯",
+    "subcategories": {}
+  },
+  "357": {
+    "name": "涨停最强板块统计",
+    "subcategories": {}
+  },
+  "358": {
+    "name": "指数技术面因子(专业版)",
+    "subcategories": {}
+  },
+  "359": {
+    "name": "基金技术面因子(专业版)",
+    "subcategories": {}
+  },
+  "362": {
+    "name": "东方财富概念板块",
+    "subcategories": {}
+  },
+  "363": {
+    "name": "东方财富概念成分",
+    "subcategories": {}
+  },
+  "364": {
+    "name": "神奇九转指标",
+    "subcategories": {}
+  },
+  "365": {
+    "name": "周/月线复权行情(每日更新)",
+    "subcategories": {}
+  },
+  "366": {
+    "name": "上证e互动问答",
+    "subcategories": {}
+  },
+  "367": {
+    "name": "深证易互动问答",
+    "subcategories": {}
+  },
+  "368": {
+    "name": "期货合约涨跌停价格",
+    "subcategories": {}
+  },
+  "369": {
+    "name": "开盘竞价成交（当日）",
+    "subcategories": {}
+  },
+  "370": {
+    "name": "分钟行情",
+    "subcategories": {}
+  }
+}
